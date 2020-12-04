@@ -11,7 +11,7 @@ problem_1() ->
                end,
     FilterFun = fun(Val) -> is_number(Val) end,
     Ints = lists:filter(FilterFun, lists:map(ParseFun, Lines)),
-    SortedInts = lists:sort(fun(A, B) -> A < B end, Ints),
+    SortedInts = lists:sort(fun(A, B) -> A > B end, Ints),
     SortedInts.
 
 readlines(FileName) ->
