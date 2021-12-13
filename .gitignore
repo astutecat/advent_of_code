@@ -1,75 +1,83 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/emacs,erlang
-# Edit at https://www.toptal.com/developers/gitignore?templates=emacs,erlang
+# Created by https://www.toptal.com/developers/gitignore/api/vim,macos,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim,macos,windows
 
-### Emacs ###
-# -*- mode: gitignore; -*-
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
 *~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
+# Auto-generated tag files
+tags
+TAGS
+# Persistent undo
+[._]*.un~
 
-# Org-mode
-.org-id-locations
-*_archive
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
-# flymake-mode
-*_flymake.*
+# Dump file
+*.stackdump
 
-# eshell files
-/eshell/history
-/eshell/lastdir
+# Folder config file
+[Dd]esktop.ini
 
-# elpa packages
-/elpa/
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# reftex files
-*.rel
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
 
-# AUCTeX auto folder
-/auto/
+# Windows shortcuts
+*.lnk
 
-# cask packages
-.cask/
-dist/
+# End of https://www.toptal.com/developers/gitignore/api/vim,macos,windows
 
-# Flycheck
-flycheck_*.el
-
-# server auth directory
-/server/
-
-# projectiles files
-.projectile
-
-# directory configuration
-.dir-locals.el
-
-# network security
-/network-security.data
-
-
-### Erlang ###
-.eunit
-*.o
-*.beam
-*.plt
-erl_crash.dump
-.concrete/DEV_MODE
-
-# rebar 2.x
-.rebar
-rel/example_project
-ebin/*.beam
-deps
-
-# rebar 3
-.rebar3
-_build/
-_checkouts/
-
-# End of https://www.toptal.com/developers/gitignore/api/emacs,erlang

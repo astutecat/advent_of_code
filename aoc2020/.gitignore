@@ -1,21 +1,37 @@
-.rebar3
-_*
+
+# Created by https://www.toptal.com/developers/gitignore/api/erlang,elixir
+# Edit at https://www.toptal.com/developers/gitignore?templates=erlang,elixir
+
+### Elixir ###
+/_build
+/cover
+/deps
+/doc
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+/config/*.secret.exs
+.elixir_ls/
+
+### Elixir Patch ###
+
+### Erlang ###
 .eunit
 *.o
-*.beam
 *.plt
-*.swp
-*.swo
-.erlang.cookie
-ebin
-log
-erl_crash.dump
+.concrete/DEV_MODE
+
+# rebar 2.x
 .rebar
-logs
-_build
-.idea
-*.iml
-rebar3.crashdump
-*~
-erlang.TAGS
-TAGS
+rel/example_project
+ebin/*.beam
+deps
+
+# rebar 3
+.rebar3
+_build/
+_checkouts/
+
+# End of https://www.toptal.com/developers/gitignore/api/erlang,elixir
+
