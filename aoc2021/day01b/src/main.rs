@@ -15,7 +15,7 @@ fn main() -> Result<(), Box<dyn Error>> {
       if let Some(p) = prev {
         if curr > p {
           num_increased += 1;
-        }      
+        }
       }
       prev = Some(curr);
     }
